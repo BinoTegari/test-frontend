@@ -33,7 +33,9 @@ button:hover {
 li {
     list-style-type: none;
 }
-.input {
+input[type=text]{
+  width: 230px;
+  height: 50px;
   background: linear-gradient(180deg, #F8F8F8 0%, rgba(243, 243, 243, 0) 100%, #F2F2F2 100%);
   border: 1px solid #D7D7D7;
   box-sizing: border-box;
