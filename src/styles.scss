@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-image: url(./assets/image/bg.svg);
+    background: url(./assets/image/bg.svg) no-repeat center center;
+    background-size: cover;
     height: 100%;
     width: 100%;
   }
