@@ -1,38 +1,32 @@
-
 <div class="container">
-    <form action="">
-    <div class="fence_detail">
-      <h3>Заказать забор</h3>
-      <ul>
-        <div class="block_input">
-        <li>
-          <label for="fence">Длина забора</label><br>
-          <input type="text" placeholder="0" id="fence">метров
-        </li>
-        <li>
-          <label for="heigth_fence">Высота забора</label><br>
-          <input type="text" placeholder="0" id="heigth_fence" >
-        </li>
-        
-        <li>
-          <label for="material_fence">Материал забора</label><br>
-          <select name="material" size="1">
-            <option selected>Выберите материал</option>
-            <option>профнастил 400₽ за м² </option>
-            <option>модули 500₽ за м²</option>
-            <option>бетон 700₽ за м²</option>
-            <option>сетка 200₽ за м²</option>
-          </select>
-        </li>
-        <li>
-          <input type="checkbox"  name="need_install"> Нужен монтаж
-        </li>
-  
-      <div class="clearfix">
-          <button [routerLink]="['/step2']">Далее</button>
-      </div>
-      </div>
-      </ul>
+  <form action="">
+    <h3>Заказать забор</h3>
+    <ul>
+      <li>
+        <label for="fence">Длина забора</label><br>
+        <input type="text" placeholder="0" id="fence"><span>метров</span>
+      </li>
+      <li>
+        <label for="heigth_fence">Высота забора</label><br>
+        <input type="text" placeholder="0" id="heigth_fence"><span>метров</span>
+      </li>
+
+      <li>
+        <label for="material_fence">Материал забора</label><br>
+        <select name="material" size="1">
+          <option selected>Выберите материал</option>
+          <option>профнастил 400₽ за м² </option>
+          <option>модули 500₽ за м²</option>
+          <option>бетон 700₽ за м²</option>
+          <option>сетка 200₽ за м²</option>
+        </select>
+      </li>
+      <li>
+        <input type="checkbox" name="need_install"> Нужен монтаж
+      </li>
+    </ul>
+    <div class="nextbtn">
+      <button [routerLink]="['/step2']">Далее</button>
     </div>
-    </form>
-  </div>
+  </form>
+</div>
