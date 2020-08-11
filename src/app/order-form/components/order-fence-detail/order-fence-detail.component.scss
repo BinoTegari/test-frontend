@@ -1,6 +1,5 @@
-
 .head-title {
-  padding: 39px 0 30px 0;
+  // padding: 39px 0 30px 0;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -10,6 +9,16 @@
   display: inline-block;
   width: 100%;
   color: #323232;
+}
+
+select {
+  width: 319px;
+  height: 50px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 label {
@@ -51,18 +60,18 @@ input[type=text] {
 }
 
 .container {
-    background-color: #FFF;
-    width: 490px;
-    height: 645px;
-    padding: 0px 0px;
+  background-color: #FFF;
+  // width: 490px;
+  // height: 645px;
+  padding: 40px 50px;
 
-    .fence_detail {
-        ul {
-            li {
-                list-style-type: none;
-                margin: 30px 0px;
-                width: 100%;
-            }
-        }
+  .fence_detail {
+    ul {
+      li {
+        list-style-type: none;
+        margin: 30px 0px;
+        width: 100%;
+      }
     }
+  }
 }
