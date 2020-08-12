@@ -5,8 +5,8 @@
             <ul>
                 <li>
                     <div>
-                    <label for="fence">Длина забора</label><br>
-                    <input type="text" placeholder="0" id="fence"><span>метров</span>
+                        <label for="fence">Длина забора</label><br>
+                        <input type="text" placeholder="0" id="fence"><span>метров</span>
                     </div>
                 </li>
                 <li>
@@ -16,13 +16,16 @@
 
                 <li>
                     <label for="material">Материал забора</label><br>
-                    <select name="material" size="1">
+                    <ng-select > 
+
+                    </ng-select>
+                    <!-- <select name="material" size="1">
                         <option selected>Выберите материал</option>
                         <option>профнастил 400₽ за м² </option>
                         <option>модули 500₽ за м²</option>
                         <option>бетон 700₽ за м²</option>
                         <option>сетка 200₽ за м²</option>
-                    </select>
+                    </select> -->
                 </li>
                 <li>
                     <input type="checkbox" name="need_install"> Нужен монтаж
