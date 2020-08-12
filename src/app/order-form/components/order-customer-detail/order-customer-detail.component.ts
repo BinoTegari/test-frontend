@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {OrderDataService} from "../services/order-data.service";
 
 @Component({
   selector: 'app-order-customer-detail',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderCustomerDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _orderData: OrderDataService) { }
 
   ngOnInit(): void {
   }
 
+
+  get orderData(): OrderDataService {
+    return this._orderData;
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {OrderDataService} from "../services/order-data.service";
 
 @Component({
   selector: 'app-order-fence-detail',
@@ -7,17 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderFenceDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _orderData: OrderDataService) { }
 
   ngOnInit(): void {
+    this.selectedCity = this.defaultBindingsList[0];
+  }
+
+  get orderData(): OrderDataService {
+    return this._orderData;
   }
 
   defaultBindingsList = [
-    { value: 1, label: 'Vilnius' },
-    { value: 2, label: 'Kaunas' },
-    { value: 3, label: 'Pavilnys', disabled: true }
+    { value: 0, label: 'Выберите материал' },
+    { value: 1, label: 'профнастил 400₽ за м² ' },
+    { value: 2, label: 'модули 500₽ за м²' },
+    { value: 3, label: 'бетон 700₽ за м²' },
+    { value: 4, label: 'сетка 200₽ за м²' },
   ];
 
-selectedCity = null;
+  selectedCity = null;
 
 }

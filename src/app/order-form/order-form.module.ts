@@ -5,6 +5,8 @@ import { OrderFormRouting } from './order-form-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OrderFormComponent } from './components/order-form.component';
+import {NgSelectModule} from "@ng-select/ng-select";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -16,7 +18,10 @@ import { OrderFormComponent } from './components/order-form.component';
     OrderFenceDetailComponent
   ],
   imports: [
-    OrderFormRouting
+    OrderFormRouting,
+    NgSelectModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     OrderFormComponent,

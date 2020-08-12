@@ -1,40 +1,40 @@
-<div class="container">
-    <form action="">
-        <div class="fence_detail">
-            <span class="head-title">Заказать забор</span>
-            <ul>
-                <li>
-                    <div>
-                        <label for="fence">Длина забора</label><br>
-                        <input type="text" placeholder="0" id="fence"><span>метров</span>
-                    </div>
-                </li>
-                <li>
-                    <label for="heigth_fence">Высота забора</label><br>
-                    <input type="text" placeholder="0" id="heigth_fence"><span>метров</span>
-                </li>
+<div [formGroup]="orderData.generalFg" class="form">
+    <span class="head-title">Заказать забор</span>
+    <ul>
+        <li>
+            <label for="fence">Длина забора</label><br>
+            <input type="number" placeholder="0" id="fence" formControlName="lengthFence"><span>метров</span>
+            <img height="14px" src="../../../../assets/image/check.png"><br>
+            <div class="error">Неверно заполнено поле</div>
+        </li>
+        <li>
+            <label for="heigth_fence">Высота забора</label><br>
+            <input type="number" placeholder="0" id="heigth_fence" formControlName="lengthFence"><span>метров</span>
+            <img height="14px" src="../../../../assets/image/check.png">
+             <div class="error">Неверно заполнено поле</div>
+        </li>
 
-                <li>
-                    <label for="material">Материал забора</label><br>
-                    <ng-select > 
+        <li>
+            <label>Материал забора</label><br>
+          <select formControlName="materialFence">
+            <option selected >Выберите материал</option>
+            <option value="400">профнастил 400₽ за м²</option>
+            <option value="500">модули 500₽ за м²</option>
+            <option value="700">бетон 700₽ за м²</option>
+            <option value="200">сетка 200₽ за м²</option>
+          </select>
+          <img height="14px" src="../../../../assets/image/check.png">
+          <div class="error">Неверно заполнено поле</div>
+        </li>
+        <li>
+            <input type="checkbox" name="need_install"> Нужен монтаж
+        </li>
+        <li>
 
-                    </ng-select>
-                    <!-- <select name="material" size="1">
-                        <option selected>Выберите материал</option>
-                        <option>профнастил 400₽ за м² </option>
-                        <option>модули 500₽ за м²</option>
-                        <option>бетон 700₽ за м²</option>
-                        <option>сетка 200₽ за м²</option>
-                    </select> -->
-                </li>
-                <li>
-                    <input type="checkbox" name="need_install"> Нужен монтаж
-                </li>
+        </li>
 
-                <div class="nextbtn">
-                    <button [routerLink]="['/step2']">Далее</button>
-                </div>
-            </ul>
-        </div>
-    </form>
+
+            <div [routerLink]="['/step2']" class="next-button">Далее</div>
+
+    </ul>
 </div>

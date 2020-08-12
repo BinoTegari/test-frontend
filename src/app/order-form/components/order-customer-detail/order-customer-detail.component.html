@@ -1,2 +1,29 @@
-<p>order-customer-detail works!</p>
-<button [routerLink]="['/final-step']">next</button>
+<div [formGroup]="orderData.generalFg" class="form">
+  <span class="head-title">Пожалуйста, представьтесь</span>
+  <ul>
+    <li>
+      <label >Ваше имя</label><br>
+      <input type="number" placeholder="0" formControlName="personName"><span>метров</span>
+      <img height="14px" src="../../../../assets/image/check.png"><br>
+      <ng-template class="error" *ngIf="orderData.generalFg.controls['personName']">Неверно заполнено поле</ng-template>
+    </li>
+    <li>
+      <label >Электронная почта</label><br>
+      <input type="number" placeholder="0" formControlName="personEmail"><span>метров</span>
+      <img height="14px" src="../../../../assets/image/check.png">
+      <div class="error">Неверно заполнено поле</div>
+    </li>
+    <li>
+      <label >Телефон</label><br>
+      <input type="number" placeholder="0" formControlName="personEmail"><span>метров</span>
+      <img height="14px" src="../../../../assets/image/check.png">
+      <div class="error">Неверно заполнено поле</div>
+    </li>
+
+    <div style="text-align: center;">
+      <button [routerLink]="['/final-step']" class="send">Отправить</button>
+    </div>
+  </ul>
+</div>
+
+
