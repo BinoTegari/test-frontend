@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {OrderDataService} from "../services/order-data.service";
+import { OrderDataService } from "../services/order-data.service";
 
 @Component({
   selector: 'app-order-customer-detail',

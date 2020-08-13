@@ -5,6 +5,6 @@ import { OrderDataService } from './services/order-data.service';
     selector: 'app-order-form',
     templateUrl: './order-form.component.html',
     styleUrls: ['./order-form.component.scss'],
-    providers: [ OrderDataService ]
+    providers: [OrderDataService]
 })
-export class OrderFormComponent {}
+export class OrderFormComponent { }

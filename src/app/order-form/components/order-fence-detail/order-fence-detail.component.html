@@ -11,20 +11,20 @@
             <label for="heigth_fence">Высота забора</label><br>
             <input type="number" placeholder="0" id="heigth_fence" formControlName="lengthFence"><span>метров</span>
             <img height="14px" src="../../../../assets/image/check.png">
-             <div class="error">Неверно заполнено поле</div>
+            <div class="error">Неверно заполнено поле</div>
         </li>
 
         <li>
             <label>Материал забора</label><br>
-          <select formControlName="materialFence">
-            <option selected >Выберите материал</option>
-            <option value="400">профнастил 400₽ за м²</option>
-            <option value="500">модули 500₽ за м²</option>
-            <option value="700">бетон 700₽ за м²</option>
-            <option value="200">сетка 200₽ за м²</option>
-          </select>
-          <img height="14px" src="../../../../assets/image/check.png">
-          <div class="error">Неверно заполнено поле</div>
+            <select formControlName="materialFence">
+                <option selected>Выберите материал</option>
+                <option value="400">профнастил 400₽ за м²</option>
+                <option value="500">модули 500₽ за м²</option>
+                <option value="700">бетон 700₽ за м²</option>
+                <option value="200">сетка 200₽ за м²</option>
+            </select>
+            <img height="14px" src="../../../../assets/image/check.png">
+            <div class="error">Неверно заполнено поле</div>
         </li>
         <li>
             <input type="checkbox" name="need_install"> Нужен монтаж
@@ -34,7 +34,7 @@
         </li>
 
 
-            <div [routerLink]="['/step2']" class="next-button">Далее</div>
+        <div [routerLink]="['/step2']" class="next-button">Далее</div>
 
     </ul>
 </div>

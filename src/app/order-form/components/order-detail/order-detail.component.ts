@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {OrderDataService} from "../services/order-data.service";
+import { OrderDataService } from '../services/order-data.service';
 
 @Component({
   selector: 'app-order-detail',
@@ -8,6 +8,7 @@ import {OrderDataService} from "../services/order-data.service";
 })
 export class OrderDetailComponent implements OnInit {
 
+  // tslint:disable-next-line: variable-name
   constructor(private _orderData: OrderDataService) { }
 
   ngOnInit(): void {

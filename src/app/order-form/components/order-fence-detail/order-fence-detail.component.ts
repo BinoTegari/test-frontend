@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {OrderDataService} from "../services/order-data.service";
+import { OrderDataService } from '../services/order-data.service';
 
 @Component({
   selector: 'app-order-fence-detail',
@@ -9,10 +9,6 @@ import {OrderDataService} from "../services/order-data.service";
 export class OrderFenceDetailComponent implements OnInit {
 
   constructor(private _orderData: OrderDataService) { }
-
-  ngOnInit(): void {
-    this.selectedCity = this.defaultBindingsList[0];
-  }
 
   get orderData(): OrderDataService {
     return this._orderData;
@@ -26,6 +22,10 @@ export class OrderFenceDetailComponent implements OnInit {
     { value: 4, label: 'сетка 200₽ за м²' },
   ];
 
-  selectedCity = null;
+  selectedSity = null;
+
+  ngOnInit(): void {
+    this.selectedSity = this.defaultBindingsList[0];
+  }
 
 }
