@@ -7,7 +7,8 @@ const routes: Routes = [
   {
     path: 'order-form',
     loadChildren: () => import('./order-form/order-form.module').then(m => m.OrderFormModule)
-  }
+  },
+  { path: '',   redirectTo: '/order-form/step1', pathMatch: 'full' },
 ];
 
 @NgModule({
