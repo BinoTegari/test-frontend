@@ -5,9 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { OrderCustomerDetailComponent } from './components/order-customer-detail/order-customer-detail.component';
 
-
-
-
 const routes: Routes = [
     {
         path: '',
@@ -24,7 +21,7 @@ const routes: Routes = [
             {
                 path: 'final-step',
                 component: OrderDetailComponent
-            }
+            },
         ]
     }
 ];
